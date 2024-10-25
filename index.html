@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Livro de operação Termope</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            text-align: center;
+            border-collapse: separate;
+            border-spacing: 5px;
+            border-color: black;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        @page {
+            size: A4 landscape;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="align-items: center;display: flex; height: 123px;">
+        <div style="padding-top: 5px; width: 100%;">
+            <img
+                src="data:image/png;base64,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">
+        </div>
+
+        <div style="display: flex; align-items: center;padding-right: 5px;">
+            <span style="font-size: 24px;">Data:&nbsp;&nbsp;</span> <span
+                style="border: 1px solid black;padding: 3px;border-radius: 5px;">25/10/2024</span>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">LIVRO DE OPERAÇÃO - 2410-CA1-PG-002-1</h1>
+
+    <div style="align-items: center; display: flex; height: 100px; padding-left: 10px;">
+        <table style="width: 200px; ">
+            <tr>
+                <td style="text-align: right; font-weight: bold; border: none;">Supervisor:&nbsp;&nbsp;</td>
+                <td style="border: 1px solid black;padding: 3px;border-radius: 5px; width: 100px;">AP</td>
+            </tr>
+            <tr>
+                <td style="text-align: right; font-weight: bold; border: none;">Turno:&nbsp;&nbsp;</td>
+                <td style="border: 1px solid black;padding: 3px;border-radius: 5px; width: 100px;">Noite</td>
+            </tr>
+        </table>
+        <div style="border-bottom: 2px solid black; width: 200px; margin-left: 10px;"></div>
+        <table style="width: 200px; margin-left: 50px;">
+            <tr>
+                <th style="text-align: center; font-weight: bold; border: none; vertical-align: bottom;">Tec.1:</th>
+                <th style="text-align: center; font-weight: bold; border: none; vertical-align: bottom;">Tec.2:</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;padding: 3px;border-radius: 5px; width: 100px;">Noite</td>
+                <td style="border: 1px solid black;padding: 3px;border-radius: 5px; width: 100px;">Noite</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
